@@ -1,4 +1,4 @@
-# Traffic Analyser and Perception-Based Detection
+## 🚦 Traffic Analyser and Perception-Based Detection
 
 ## 📘 Project Description
 An AI-powered smart traffic control system that analyzes real-time or uploaded traffic images to dynamically decide which road should get the green light. The system uses computer vision and YOLO object detection to manage traffic flow efficiently.
