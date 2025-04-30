@@ -1,0 +1,91 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;  /* Professional font */
+    background-color: #f4f4f9; /* Default Light Grey Background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen height */
+    transition: background-color 0.5s ease-in-out; /* Smooth transition */
+}
+
+body.green-light {
+    background-color: #28a745; /* Green background when road gets green light */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.image-preview {
+    width: 300px;  /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: contain; /* Maintain aspect ratio */
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 5px;
+    display: none; /* Hide initially */
+    margin: 10px auto; /* Center horizontally */
+    display: block; /* Ensure it's treated as a block element */
+}
+
+
+/* Centered Container */
+.container {
+    max-width: 500px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+}
+
+/* Input Field Styling */
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Upload Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Response Message Styling */
+#response {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #28a745; /* Green Success Message */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body> 
+    <div class="container">
+        <h2>Upload the image of Traffic 🚦</h2>
+        <form id="uploadForm">
+         <!-- Image Preview (Initially Hidden) -->
+         <img id="uploadedImage" src="" alt="Uploaded Image" class="image-preview">
+
+         <!-- File Input Field -->
+         <input type="file" id="fileInput" name="file" required>
+
+         <!-- Progress Bar -->
+         <progress id="uploadProgress" value="0" max="100" style="width:100%; margin-top: 10px;"></progress>
+
+         <!-- Submit Button -->
+         <button type="submit">Analyze Traffic</button>
+
+        </form>
+        <p id="response"></p>
+        
+    </div>
+    <script src="script.js"></script>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
