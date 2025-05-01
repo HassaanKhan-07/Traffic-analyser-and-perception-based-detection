@@ -34,9 +34,10 @@ An AI-powered smart traffic control system that analyzes real-time or uploaded t
    Place them in the `yolo-cfg/` directory.
 
 4. Run the Flask app:
+   ```bash
    python app.py
 
-5. Open the browser and go to:
+6. Open the browser and go to:
    http://127.0.0.1:5000
 
 ## 🎥 Demo
